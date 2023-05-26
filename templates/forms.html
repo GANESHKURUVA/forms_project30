@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>forms</title>
+    <style>
+     #fi{
+        width: fit-content;
+        background-color: aqua;
+        font-style: italic;
+        font-weight: bolder;
+     }
+     #b.hover{
+        background-color: green;
+        
+     }
+     #b{
+        background-color: red;
+     }
+    </style>
+</head>
+<body>
+    <center>
+        <legend style="font-style: italic;">FORMS</legend>
+        <form method="POST" id="f">
+            <fieldset id="fi">
+            {% csrf_token %}
+            <label for="un">UserName</label>
+            <input type="text" name="un" id="un">
+            <br><br>
+            <label for="pw" >UserName</label>
+            <input type="password" name="pw" id="pw">
+            <br><br>
+            <input type="submit" value="submit forms" id="b">
+            </fieldset>
+
+        </form>
+    </center>
+</body>
+</html>
